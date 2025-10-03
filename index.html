@@ -24,6 +24,13 @@
       <li>BTS SIO – Lycée X</li>
       </ul>
     </section>
+      <script>
+    function toggleCompetences() {
+    const compSection = document.getElementById('competences');
+    compSection.style.display =
+    compSection.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
       <button onclick="toggleCompetences()">Bouton !</button>
     <button onclick="toggleCompetences()">Afficher/Masquer compétences</button>
     <section id="competences">
