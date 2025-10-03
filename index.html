@@ -18,7 +18,15 @@
     <p>Contact : email@example.com</p>
   </header>
   <main>
-    <section>
+    <script>
+    function toggleformation() {
+    const compSection = document.getElementById('formation');
+    compSection.style.display =
+    compSection.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+    <button onclick="toggleformation()">Bouton !</button>
+    <section id='formation'>
       <h2>Formation</h2>
       <ul>
       <li>BTS SIO – Lycée X</li>
@@ -32,7 +40,6 @@
     }
   </script>
       <button onclick="toggleCompetences()">Bouton !</button>
-    <button onclick="toggleCompetences()">Afficher/Masquer compétences</button>
     <section id="competences">
       <ul>
       <li>HTML</li>
